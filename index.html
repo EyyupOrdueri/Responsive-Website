@@ -16,10 +16,6 @@
     <!--========== FAVICON ==========-->
     <link rel="icon" href="assets/img/favicon.png" type="image/png" />
 
-    <!--========== Firebase SDK ==========-->
-    <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.1.2/firebase-database.js"></script>
-
     <title>C. M. Job</title>
   </head>
   <body>
@@ -294,32 +290,5 @@
 
     <!--========== MAIN JS ==========-->
     <script src="assets/js/main.js"></script>
-    <script>
-      // Your web app's Firebase configuration
-      const firebaseConfig = {
-        apiKey: "AIzaSyB-ObwcTBsZGHzYFrjfKKbpk2leychl-3k",
-        authDomain: "coinmarketjob.firebaseapp.com",
-        databaseURL: "https://coinmarketjob-default-rtdb.firebaseio.com",
-        projectId: "coinmarketjob",
-        storageBucket: "coinmarketjob.appspot.com",
-        messagingSenderId: "752799271624",
-        appId: "1:752799271624:web:53695923b3d4247a4ab3fd",
-        measurementId: "G-0EFMDHZ4J3",
-      };
-
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      var firebaseRef = firebase.database().ref("Employers");
-      firebaseRef.once("value", function (snapshot) {
-        var data = snapshot.val();
-        for (let i in data) {
-          console.log(data[i]);
-        }
-      });
-    </script>
-    <!--
-    <script src="assets/js/firebase.js"></script>
-    <script src="assets/js/functions.js"></script>
-    -->
   </body>
 </html>
