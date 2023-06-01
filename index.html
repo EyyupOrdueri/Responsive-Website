@@ -148,15 +148,12 @@
 
         <div class="menu__container bd-grid">
           <div class="menu__content">
-            <img src="assets/img/plate1.png" alt="" class="menu__img" />
-            <h3 class="menu__name">DevOps Engineer</h3>
-            <span class="menu__detail">Senior</span>
-            <span class="menu__preci">$30.00 per hour</span>
-            <!--
-            <a href="#" class="button menu__button"
-              ><i class="bx bx-cart-alt"></i
-            ></a>
-            -->
+            <label>Name</label> <input id="Namebox" type="text" />
+            <label>Id</label> <input id="ID" type="text" />
+            <label>Description</label> <input id="Desc" type="text" />
+            <hr />
+            <button id="Insbtn">INSERT</button>
+            <button id="Selbtn">SELECT</button>
           </div>
 
           <div class="menu__content">
@@ -164,11 +161,6 @@
             <h3 class="menu__name">Fullstack Developer</h3>
             <span class="menu__detail">Junior</span>
             <span class="menu__preci">$21.00 per hour</span>
-            <!--
-            <a href="#" class="button menu__button"
-              ><i class="bx bx-cart-alt"></i
-            ></a>
-            -->
           </div>
 
           <div class="menu__content">
@@ -176,11 +168,6 @@
             <h3 class="menu__name">Data Scientist</h3>
             <span class="menu__detail">Junior</span>
             <span class="menu__preci">$23.00 per hour</span>
-            <!--
-            <a href="#" class="button menu__button"
-              ><i class="bx bx-cart-alt"></i
-            ></a>
-            -->
           </div>
         </div>
       </section>
@@ -290,5 +277,8 @@
 
     <!--========== MAIN JS ==========-->
     <script src="assets/js/main.js"></script>
+
+    <!--========== FIREBASE JS ==========-->
+    <script type="module" src="assets/js/firebase.js"></script>
   </body>
 </html>
